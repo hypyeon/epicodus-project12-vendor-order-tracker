@@ -1,0 +1,11 @@
+MVC application to help Pierre track:
+1) the vendors that purchase baked goods from him
+2) the orders belonging to those vendors
+
+Using Razor, display information including:
+- `Vendor` class, including properties for: a) vendor's name, b) description of vendor, c) `List` of `Order`s belonging to the vendor
+- `Order` class, including properties for: a) title, b) description, c) price, d) date, and more
+
+- Homepage (rootpath: localhost:5000/) is a welcome message page, with Vendor's page link. 
+- Vendor's page includes a link to a form Pierre fills out to create a new `Vendor` > when submitted, the new `Vendor` obj is saved into a static `List` > routed back to the homepage 
+- Clicking on `Vendor`'s name will direct to a new page displaying: a) all orders under the `Vendor`, b) a form to create a new `Order`
