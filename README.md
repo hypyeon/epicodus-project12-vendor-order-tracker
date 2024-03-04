@@ -14,11 +14,11 @@ by [Hayeong Pyeon](https://hypyeon.github.io/WebDevWebsite/)
 
 ## Description
 - This is an independent project provided from Epicodus.
-- This project is to review **Basic Web Applications** under **C#**course.
+- This project is to review **Basic Web Applications** under **C#** course.
 
 ## Setup Requirements
 1. Clone this repo.
-2. Open your shell (e.g., Terminal or GitBash) and navigate to this project's production directory named **ToDoList**. 
+2. Open your shell (e.g., Terminal or GitBash) and navigate to this project's production directory named **Tracker**. 
 3. Run `dotnet watch run` in the command line to start the project in development mode with a watcher.
 4. Open the browser to _https://localhost:5001_. 
 - Make sure to have configured a .NET developer security certificate for HTTPS.
