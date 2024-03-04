@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Http.Features;
+using Tracker.Controllers;
 
 namespace Tracker.Models
 {
@@ -10,6 +11,8 @@ namespace Tracker.Models
     public string Address { get; set; }
     private static List<Vendor> _instances = new List<Vendor> {};
 
+    public List<Order> Orders { get; set; }
+
     public Vendor(string vendorName, string registerDate, string address)
     {
       _instances.Add(this);
@@ -17,6 +20,7 @@ namespace Tracker.Models
       Id = _instances.Count;
       Date = registerDate;
       Address = address;
+      Orders = new List<Order>{};
     }
 
     public static void ClearAll()
@@ -32,6 +36,11 @@ namespace Tracker.Models
     public static Vendor Find(int searchId)
     {
       return _instances[searchId - 1];
+    }
+
+    public void AddOrder(Order order)
+    {
+      Orders.Add(order);
     }
   }
 }
