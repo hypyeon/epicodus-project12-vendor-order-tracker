@@ -7,14 +7,16 @@ namespace Tracker.Models
     public string Name { get; set; }
     public int Id { get; }
     public string Date { get; set; }
+    public string Address { get; set; }
     private static List<Vendor> _instances = new List<Vendor> {};
 
-    public Vendor(string vendorName, string RegisterDate)
+    public Vendor(string vendorName, string registerDate, string address)
     {
       _instances.Add(this);
       Name = vendorName;
       Id = _instances.Count;
-      Date = RegisterDate;
+      Date = registerDate;
+      Address = address;
     }
 
     public static void ClearAll()
