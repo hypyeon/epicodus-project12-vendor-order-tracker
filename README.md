@@ -9,8 +9,15 @@ by [Hayeong Pyeon](https://hypyeon.github.io/WebDevWebsite/)
 5. [License](#license)
 
 ## Technologies used
-*to be updated*
-- C#, TDD (MS Unit Testing)
+- C#, .NET
+- TDD, MS Unit Testing, RGR Workflow
+- ASP.NET Core MVC
+- Razor Markup Syntax, `foreach` loop & conditional
+- HTTP CRUD methods
+- RESTful Routing 
+- Objects within Objects
+- Layouts using SCSS 
+- New Minimal Hosting Model (`Startup.cs`)
 
 ## Description
 - This is an independent project provided from Epicodus.
@@ -26,7 +33,7 @@ by [Hayeong Pyeon](https://hypyeon.github.io/WebDevWebsite/)
 - To see all possible commands and tolls for `dev-certs`, run `dotnet dev-certs https --help` in the command line. 
 
 ## Known Bugs
-*currently under development as of March 04, 2024*
+No bug found as of March 04, 2024
 
 ## License
 [MIT](/LICENSE.txt) | Copyright © 2024 Hayeong Pyeon
