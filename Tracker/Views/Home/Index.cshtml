@@ -8,12 +8,19 @@
       rel="stylesheet" 
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
       crossorigin="anonymous">
-    <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
-    <h1>Vendor and Order Tracker</h1>
-    <h2>Welcome, Pierre! This application is built for you to track your vendors and their orders.</h2>
-    <h3><a href="/vendors">View Vendors</a></h3>
-    <h3><a href="/vendors/new">Add a New Vendor</a></h3>
+    @{
+      Layout = "_Layout";
+    }
+    <h1>Vendor and Order Tracker 📝</h1>
+    <hr>
+    <h2>Welcome, Pierre!</h2>
+    <h5>This application is built for you to track your vendors and their orders.</h5>
+    <hr>
+    <div class="buttons">
+      <h4><a href="/vendors">View Vendors</a></h4>
+      <h4><a href="/vendors/new">Add a New Vendor</a></h4>
+    </div>
   </body>
 </html>

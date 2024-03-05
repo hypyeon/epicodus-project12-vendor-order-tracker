@@ -10,18 +10,30 @@
       crossorigin="anonymous">
   </head>
   <body>
+    @{
+      Layout = "_Layout";
+    }
     <h1>Add a New Vendor</h1>
-    <p>Vendor's information:</p>
+
     <form action="/vendors" method="post">
-      <label for="vendorName">Vendor's Name: </label>
-      <input id="vendorName" name="vendorName" type="text">
-      <label for="registerDate">Registered Date: </label>
-      <input id="registerDate" name="registerDate" type="date">
-      <label for="address">Vendor's Address: </label>
-      <input id="address" name="address" type="text">
+      <h4>Vendor's information:</h4>
+      <div>
+        <label for="vendorName">Vendor Name: </label>
+        <input id="vendorName" name="vendorName" type="text">
+      </div>
+      <div>
+        <label for="registerDate">Registered Date: </label>
+        <input id="registerDate" name="registerDate" type="date">
+      </div>
+      <div>
+        <label for="address">Address: </label>
+        <input id="address" name="address" type="text">
+      </div>
       <button type="submit">Register</button>
     </form>
-    <p><a href="/">Homepage</a></p>
-    <p><a href="/vendors">Back to Vendor List</a></p>
+    <div class="buttons">
+      <h4><a href="/">Homepage</a></h4>
+      <h4><a href="/vendors">Back to Vendor List</a></h4>
+    </div>
   </body>
 </html>

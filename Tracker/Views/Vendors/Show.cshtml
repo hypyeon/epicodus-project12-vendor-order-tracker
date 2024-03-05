@@ -10,21 +10,28 @@
       crossorigin="anonymous">
   </head>
   <body>
+    @{
+      Layout = "_Layout";
+    }
     @using Tracker.Models;
 
     <h3>@Model["vendor"].Name</h3>
-    <p>Registered Date: @Model["vendor"].Date</p>
-    <p>Vendor's Address: @Model["vendor"].Address</p>
+    <div class="vendor-info">
+      <p>Registered Date: @Model["vendor"].Date</p>
+      <p>Address: @Model["vendor"].Address</p>
+    </div>
 
-    <ol>
+    <ol class="order-list">
       @foreach (Order order in @Model["orders"])
       {
         <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Name</a></li>
       } 
     </ol>
 
-    <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a New Order</a></p>
-    <p><a href='/vendors'>Return to Vendor List</a></p>
-    <p><a href="/">Homepage</a></p>
+    <div class="buttons">
+      <h4><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a New Order</a></h4>
+      <h4><a href='/vendors'>Return to Vendor List</a></h4>
+      <h4><a href="/">Homepage</a></h4>
+    </div>
   </body>
 </html>

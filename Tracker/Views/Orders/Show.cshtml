@@ -10,14 +10,20 @@
       crossorigin="anonymous">
   </head>
   <body>
+    @{
+      Layout = "_Layout";
+    }
     <h2>Order details:</h2>
     <h3>@Model["order"].Name</h3>
-    <p>Order placed: @Model["order"].Date</p>
-    <p>Amount deposited: @Model["order"].Price</p>
+    <div class="order-info">
+      <p>Order placed: @Model["order"].Date</p>
+      <p>Amount deposited: $@Model["order"].Price</p>
+    </div>
 
-    <p><a href='/vendors/@Model["vendor"].Id'>Go back to @Model["vendor"].Name</a></p>
-    <p><a href='/vendors'>Go back to Vendor List</a></p>
-    <p><a href='/'>Homepage</a></p>
-    
+    <div class="buttons">
+      <h4><a href='/vendors/@Model["vendor"].Id'>Go back to @Model["vendor"].Name</a></h4>
+      <h4><a href='/vendors'>Go back to Vendor List</a></h4>
+      <h4><a href='/'>Homepage</a></h4>
+    </div> 
   </body>
 </html>

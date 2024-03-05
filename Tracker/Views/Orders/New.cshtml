@@ -10,14 +10,25 @@
       crossorigin="anonymous">
   </head>
   <body>
+    @{
+      Layout = "_Layout";
+    }
+
     <form action="/vendors/@Model.Id/orders" method="post">
+      <h4>Order Detail</h4>
       <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-      <label for="productName">Product Name: </label>
-      <input id="productName" name="productName" type="text">
-      <label for="orderDate">Order date: </label>
-      <input id="orderDate" name="orderDate" type="date">
-      <label for="price">Amount: </label>
-      <input id="price" name="price" type="number" step="0.25" pattern="\d+(\.\d{1,2})?" placeholder="$0.00">
+      <div>
+        <label for="productName">Product Name: </label>
+        <input id="productName" name="productName" type="text">
+      </div>
+      <div>
+        <label for="orderDate">Order date: </label>
+        <input id="orderDate" name="orderDate" type="date">
+      </div>
+      <div>
+        <label for="price">Amount: </label>
+        <input id="price" name="price" type="number" step="0.25" pattern="\d+(\.\d{1,2})?" placeholder="$0.00">
+      </div>
       <button type="submit">Place this order</button>
     </form>
   </body>
