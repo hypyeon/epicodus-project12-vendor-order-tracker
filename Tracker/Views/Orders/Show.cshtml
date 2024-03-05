@@ -14,5 +14,10 @@
     <h3>@Model["order"].Name</h3>
     <p>Order placed: @Model["order"].Date</p>
     <p>Amount deposited: @Model["order"].Price</p>
+
+    <p><a href='/vendors/@Model["vendor"].Id'>Go back to @Model["vendor"].Name</a></p>
+    <p><a href='/vendors'>Go back to Vendor List</a></p>
+    <p><a href='/'>Homepage</a></p>
+    
   </body>
 </html>

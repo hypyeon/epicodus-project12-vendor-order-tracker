@@ -15,9 +15,9 @@
       <label for="productName">Product Name: </label>
       <input id="productName" name="productName" type="text">
       <label for="orderDate">Order date: </label>
-      <input id="orderDate" name="orderDate" type="text">
+      <input id="orderDate" name="orderDate" type="date">
       <label for="price">Amount: </label>
-      <input id="price" name="price" type="text" placeholder="$0.00">
+      <input id="price" name="price" type="number" step="0.25" pattern="\d+(\.\d{1,2})?" placeholder="$0.00">
       <button type="submit">Place this order</button>
     </form>
   </body>

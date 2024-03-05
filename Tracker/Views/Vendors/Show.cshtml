@@ -12,7 +12,9 @@
   <body>
     @using Tracker.Models;
 
-    <h3>Orders made for @Model["vendor"].Name</h3>
+    <h3>@Model["vendor"].Name</h3>
+    <p>Registered Date: @Model["vendor"].Date</p>
+    <p>Vendor's Address: @Model["vendor"].Address</p>
 
     <ol>
       @foreach (Order order in @Model["orders"])
